@@ -79,9 +79,7 @@ gulp.task("css", function() {
         // Compile Sass
         .pipe(sass({ style: "compressed", noCache: true }))
         // parse CSS and add vendor-prefixed CSS properties
-        .pipe(autoprefixer({
-            browsers: ["last 2 versions"]
-        }))
+        .pipe(autoprefixer())
         // Minify CSS
         .pipe(cssmin())
         // Rename the file
