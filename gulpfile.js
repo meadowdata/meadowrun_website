@@ -8,7 +8,7 @@ var gulp                    = require("gulp"),
     htmlmin                 = require("gulp-htmlmin"),
 
     // CSS plugins
-    sass                    = require("gulp-sass"),
+    sass                    = require("gulp-sass")(require('sass')),
     autoprefixer            = require("gulp-autoprefixer"),
     cssmin                  = require("gulp-clean-css"),
     rename                  = require("gulp-rename"),
@@ -115,7 +115,7 @@ gulp.task("images", function() {
 });
 
 // Use default task to launch BrowserSync and watch all files
-gulp.task("default", ["browser-sync"], function () {
+gulp.task("default", gulp.series("browser-sync", function () {
     // All browsers reload after tasks are complete
     // Watch HTML files
     watch("src/html/**/*", function () {
@@ -133,4 +133,4 @@ gulp.task("default", ["browser-sync"], function () {
     watch("src/img/**/*.+(png|jpeg|jpg|gif|svg)", function () {
         gulp.start("images", reload);
     });
-});
+}));
