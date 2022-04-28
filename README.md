@@ -1,13 +1,12 @@
-# Carta
-Say hello to Carta, a modern, illustrated site template.
+# meadowrun.io
+The project website for [Meadowrun](https://github.com/meadowdata/meadowrun)
 
-[Papaya](https://www.papayatemplates.com)
-[@jrdnbwmn](https://www.twitter.com/jrdnbwmn)
-
-Demo images from [Unsplash](https://unsplash.com/).
-Icons from [Entypo](http://entypo.com/).
+Based on template from [Papaya](https://www.papayatemplates.com) and illustrations from
+[Undraw](https://undraw.co)
 
 ## Instructions
-For local development, run `npm install` on the main directory and then `gulp` to get BrowserSync going along with all the Gulp tasks (see [Pear](https://github.com/jrdnbwmn/Pear)).
 
-Development files are in `src`. Everything is compiled into `dist`—that’s where all your final files reside.
+For local development, run `npm install`, [install the gulp
+CLI](https://gulpjs.com/docs/en/getting-started/quick-start/#install-the-gulp-command-line-utility)
+then run `gulp`. On Windows, the filesystem watcher is a bit flaky, so you can always
+run `gulp html css js images` manually after making edits. 
