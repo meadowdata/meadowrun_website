@@ -84,6 +84,16 @@ hr {
 .blockquote:before, .blockquote:after { content: ""; }
 
 
+// logo
+h1.logo {
+    font-family: "Source Sans Pro";
+    color: #9ACAEF;
+    font-weight: 400;
+}
+
+h1.logo span.logo-bracket { color: #A0B070; }
+
+
 // Utilities
 // -------------------------------------------------------------------
 // Weight
@@ -105,3 +115,6 @@ hr {
 .font--heading           { font-family: $font-family--heading }
 .font--reading           { font-family: $font-family--reading }
 .font--ui                { font-family: $font-family--ui }
+
+// Use to create preferred line breaks, see https://stackoverflow.com/a/24357132
+span.line                { display: inline-block; }

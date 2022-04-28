@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 667 667" style="enable-background:new 0 0 667 667;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#AECBFA;}
+	.st1{fill:#669DF6;}
+	.st2{fill:#4285F4;}
+</style>
+<g>
+	<rect x="234.8" y="234.8" class="st0" width="199.5" height="199.5"/>
+	<rect x="301.3" y="2" class="st1" width="66.5" height="133"/>
+	<rect x="168.3" y="2" class="st1" width="66.5" height="133"/>
+	<rect x="434.3" y="2" class="st1" width="66.5" height="133"/>
+	<rect x="301.3" y="534" class="st2" width="66.5" height="133"/>
+	<rect x="168.3" y="534" class="st2" width="66.5" height="133"/>
+	<rect x="434.3" y="534" class="st2" width="66.5" height="133"/>
+	<rect x="534" y="301.3" class="st2" width="133" height="66.5"/>
+	<rect x="534" y="434.3" class="st2" width="133" height="66.5"/>
+	<rect x="534" y="168.3" class="st2" width="133" height="66.5"/>
+	<rect x="2" y="301.3" class="st1" width="133" height="66.5"/>
+	<rect x="2" y="434.3" class="st1" width="133" height="66.5"/>
+	<rect x="2" y="168.3" class="st1" width="133" height="66.5"/>
+	<path class="st0" d="M101.8,101.8v465.5h465.5V101.8H101.8z M500.8,500.8H168.3V168.3h332.5V500.8z"/>
+	<polygon class="st1" points="234.8,434.3 434.3,434.3 334.5,334.5 	"/>
+	<polygon class="st2" points="334.5,334.5 434.3,434.3 434.3,234.8 	"/>
+</g>
+</svg>

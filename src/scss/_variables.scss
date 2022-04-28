@@ -17,8 +17,8 @@ $turquoise:               #69F0AE !default;
 $red:                     #FF5252 !default;
 
 // Color scheme
-$primary-color:           $blue !default;
-$secondary-color:         $turquoise !default;
+$primary-color:           #9ACAEF !default;
+$secondary-color:         #A0B070 !default;
 $tertiary-color:          $red !default;
 
 
@@ -30,7 +30,7 @@ $baseline:                .4rem !default;
 // Typography
 // -------------------------------------------------------------------
 // Font families
-$sans-serif:              Montserrat, Avenir, "Avenir Next", Trebuchet, Verdana,
+$sans-serif:              "Source Sans Pro", Avenir, "Avenir Next", Trebuchet, Verdana,
                           sans-serif !default;
 $serif:                   "Source Serif Pro", Georgia, Times, serif !default;
 $monospace:               Monaco, Menlo, Consolas,

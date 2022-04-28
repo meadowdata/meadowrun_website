@@ -14,3 +14,5 @@ img, canvas, iframe, video, svg { max-width: 100%; }
 .icon { height: 30px; }
 
 .cta-image { max-height: 100px; }
+
+img.gray { filter: grayscale(100%); }
