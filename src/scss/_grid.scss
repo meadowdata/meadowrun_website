@@ -40,7 +40,7 @@ $grid-breakpoint: $breakpoint--sm;
         flex-grow: 1;
         flex-basis: 100%;
         max-width: 100%;
-        padding: 0;
+        padding: 0 calc($column-padding/0.4em);
         margin-left: 0;
     }
 }

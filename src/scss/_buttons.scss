@@ -42,12 +42,6 @@
         opacity: 1; // iOS fix for unreadable disabled content
         pointer-events: none; // Future-proof disabling of clicks
     }
-
-    @media screen and (max-width: $breakpoint--sm) {
-        display: block;
-        margin-top: $space-1;
-        width: 100%;
-    }
 }
 
 a.btn {
