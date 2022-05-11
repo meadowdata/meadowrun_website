@@ -1,34 +1,23 @@
-@@include("partials/head.html")
-
-    <!-- Header -->
-    <header class="align--center pt3">
-        <div class="container--lg border--bottom pb3 ">
-            <h1 class="logo"><span class="logo-bracket">[</span>meadowrun<span class="logo-bracket">]</span></h1>
-            <span>
-                <a class="btn btn--secondary mr1" href="https://docs.meadowrun.io/en/latest/tutorial/install.html">Get started</a>
-                <a class="btn btn--secondary ml1" href="https://github.com/meadowdata/meadowrun">Github</a>
-            </span>
-        </div>
-    </header>
+@@include("partials/head.html", {"tagline": false})
 
     <main>
         <div class="container pt3 pb3">
 
             <h2>Why Meadowrun?</h2>
 
-            <p>The short answer is: Meadowrun runs your Python code in the cloud, seamlessly. Scale up to a bigger machine, or scale out to many machines - once you are ready to run your analysis or program on a dataset that doesn't fit on your laptop, Meadowrun helps you do that without hassle and while keeping many of the benefits of running locally.</p>
+            <p>The short answer is: Meadowrun runs your Python code in the cloud, seamlessly. Scale up to a bigger machine, or scale out to many machines – once you are ready to run your analysis or program on a dataset that doesn’t fit on your laptop, Meadowrun helps you do that without hassle and while keeping many of the benefits of running locally.</p>
 
             <br>
 
-            <h3>What's the Problem?</h3>
+            <h3>What’s the Problem?</h3>
 
-            <p>That all sounds great, I hear you say, but don't we already have containers, AWS/Azure/GCP, Kubernetes and Dask/RAPIDS/Spark? Indeed we do, but putting those together while ensuring an efficient development workflow is no walk in the park.</p>
+            <p>That all sounds great, I hear you say, but don’t we already have containers, AWS/Azure/GCP, Kubernetes and Dask/RAPIDS/Spark? Indeed we do, but putting those together while ensuring an efficient development workflow is no walk in the park.</p>
 
-            <p>For example, containers are very useful for running on scalable compute infrastructure like Kubernetes, but locally you're more likely to have a virtual environment with third-party packages installed, and you'll certainly have some local code you'd like to run. How do you get that in the container image efficiently and reproducibly? And if you do get a container running, how do you see the logs? If there are any results how are they sent back?</p>
+            <p>For example, containers are very useful for running on scalable compute infrastructure like Kubernetes, but locally you’re more likely to have a virtual environment with third-party packages installed, and you’ll certainly have some local code you’d like to run. How do you get that in the container image efficiently and reproducibly? And if you do get a container running, how do you see the logs? If there are any results how are they sent back?</p>
 
             <p>Another source of complexity is the wide array of options to choose from, even within a single cloud provider like AWS. Should you allocate an EC2 instance, and if so, should it be a on-demand instance or a spot instance? Can you use Lambdas, or maybe Elastic Container Service? All of these have more options to choose from each with different costs and functional characteristics.</p>
 
-            <p>Finally, distributed compute clusters like Dask can be a piece of the puzzle, but require setup and management, and again the deployment problem - how do I get my code and dependencies to the cluster workers - is not straightforward to solve.</p>
+            <p>Finally, distributed compute clusters like Dask can be a piece of the puzzle, but require setup and management, and again the deployment problem – how do I get my code and dependencies to the cluster workers – is not straightforward to solve.</p>
 
             <br>
 
@@ -39,31 +28,25 @@
             <p>Our guiding principles for Meadowrun are the following.</p>
 
             <ul class="list--indented">
-                <li>We want to make Meadowrun feel like you're running locally, but with all the benefits of the cloud. You shouldn't have to worry about containers, conda packages, logs and so on, while enjoying virtually unlimited scale and elasticity. The experience we're striving for is being able to run Python code like it's SQL. We're seeing more and more data and analytics workloads run on the likes of Snowflake and other cloud data warehouses. This makes total sense from an ease of use perspective - with SQL you don't have to worry about packages, version conflicts or deploying your code. You also get easy and automatic parallelism and elasticity. To the extent possible - Python is not as declarative as SQL, so there are definitely limits here - we want the same for Python.</li>
+                <li>We want to make Meadowrun feel like you’re running locally, but with all the benefits of the cloud. You shouldn’t have to worry about containers, conda packages, logs and so on, while enjoying virtually unlimited scale and elasticity. The experience we’re striving for is being able to run Python code like it’s SQL. We’re seeing more and more data and analytics workloads run on the likes of Snowflake and other cloud data warehouses. This makes total sense from an ease of use perspective – with SQL you don’t have to worry about packages, version conflicts or deploying your code. You also get easy and automatic parallelism and elasticity. To the extent possible – Python is not as declarative as SQL, so there are definitely limits here – we want the same for Python.</li>
 
-                <li>We want to empower users to make decisions that work for them, instead of imposing or restricting choice. Meadowrun targets the main cloud providers, as well as on-prem Kubernetes, and we want to be transparent in the choices it makes - you are in control.</li>
+                <li>We want to empower users to make decisions that work for them, instead of imposing or restricting choice. Meadowrun targets the main cloud providers, as well as on–prem Kubernetes, and we want to be transparent in the choices it makes – you are in control.</li>
 
-                <li>Meadowrun should need very little setup and ongoing maintenance. To that end, we've designed Meadowrun to be serverless - there are no cluster managers, services or databases to set up. Pick a cloud provider, run a simple command and you're good to go.</li>
+                <li>Meadowrun should need very little setup and ongoing maintenance. To that end, we’ve designed Meadowrun to be serverless – there are no cluster managers, services or databases to set up. Pick a cloud provider, run a simple command and you’re good to go.</li>
 
-                <li>Last but not least - Meadowrun values your time. Interactive development and short feedback loops are important. Meadowrun doesn't keep you waiting.</li>
+                <li>Last but not least – Meadowrun values your time. Interactive development and short feedback loops are important. Meadowrun doesn’t keep you waiting.</li>
             </ul>
-            
+
             <br>
 
             <h3>Where is Meadowrun today?</h3>
 
-            <p>Those are lofty goals and it will take some time to get there, but we hope you'll follow along for the journey! Today, Meadowrun works with AWS, and can spin up the cheapest cluster of EC2 machines to run a distributed map with your Python function. It automatically and transparently creates an image with your Conda dependencies and local code.</p>
+            <p>Those are lofty goals and it will take some time to get there, but we hope you’ll follow along for the journey! Today, Meadowrun works with AWS, and can spin up the cheapest cluster of EC2 machines to run a distributed map with your Python function. It automatically and transparently creates an image with your Conda dependencies and local code.</p>
 
             <p>We hope to extend this soon with support for more cloud providers, different compute targets (like Lambda and Kubernetes), and more package managers (pip and poetry).</p>
 
         </div>
 
-        <div class="bg--dark-gray align--center pt3 pb3">
-            <div class="container pt2 pb2">
-                <a class="btn btn--default mr1" href="https://docs.meadowrun.io/en/latest/tutorial/install.html">Get started</a>
-                <a class="btn btn--default ml1" href="https://github.com/meadowdata/meadowrun">Github</a>
-            </div>
-        </div>
     </main>
 
 @@include("partials/foot.html")
