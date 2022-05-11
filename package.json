@@ -22,5 +22,7 @@
         "gulp-watch": "^5.0.1",
         "sass": "^1.51.0"
     },
-    "browserslist": ["last 2 versions"]
+    "browserslist": [
+        "last 2 versions"
+    ]
 }
