@@ -52,7 +52,13 @@ h6 { color: $gray; }
 }
 
 // Paragraph
-p { margin: 0; }
+p {
+    margin: 0;
+
+    + p {
+        margin-top: $space-1;
+    }
+}
 
 // Small
 small,
@@ -85,13 +91,14 @@ hr {
 
 
 // logo
-h1.logo {
+.logo {
     font-family: "Source Sans Pro";
     color: #9ACAEF;
     font-weight: 400;
+    text-decoration: none;
 }
 
-h1.logo span.logo-bracket { color: #A0B070; }
+.logo span.logo-bracket { color: #A0B070; }
 
 
 // Utilities
