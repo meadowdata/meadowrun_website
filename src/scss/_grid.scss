@@ -192,3 +192,51 @@ $grid-breakpoint: $breakpoint--sm;
 .offset-two-fifths            { @extend %m-two-fifths; }
 .offset-three-fifths          { @extend %m-three-fifths; }
 .offset-four-fifths           { @extend %m-four-fifths; }
+
+
+// Responsive UI for screencasts with text on the left or right.
+.cast-text {
+  grid-area: txt;
+}
+
+.cast-main {
+  grid-area: cast
+}
+
+// If screen is not wide enough, show caption then screencast.
+@mixin stack-caption-cast {
+  @media screen and (max-width: $grid-breakpoint) {
+    grid-template-columns: auto;
+    grid-template-areas:  "txt" 
+                          "cast";
+  }
+}
+
+.cast-text-row {
+  display: grid;
+
+  align-items: center;
+
+  // Gutters
+  padding: 0 $column-padding;
+
+  grid-auto-rows: minmax(100px, auto);
+  column-gap: $column-padding;
+
+  &--text-left {
+    @extend .cast-text-row;
+    // screencast is a bit bigger
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: "txt cast";
+
+    @include stack-caption-cast()
+  }
+
+  &--text-right {
+    @extend .cast-text-row;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "cast txt";
+
+    @include stack-caption-cast()
+  }
+}
