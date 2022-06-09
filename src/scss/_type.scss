@@ -125,3 +125,14 @@ hr {
 
 // Use to create preferred line breaks, see https://stackoverflow.com/a/24357132
 span.line                { display: inline-block; }
+
+
+// links on dark background
+.link--on-dark {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.link--on-dark {
+    color: $primary-color;
+}
