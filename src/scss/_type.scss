@@ -93,12 +93,12 @@ hr {
 // logo
 .logo {
     font-family: "Source Sans Pro";
-    color: #9ACAEF;
+    color: $primary-color;
     font-weight: 400;
     text-decoration: none;
 }
 
-.logo span.logo-bracket { color: #A0B070; }
+.logo span.logo-bracket { color: $secondary-color; }
 
 
 // Utilities
@@ -129,10 +129,6 @@ span.line                { display: inline-block; }
 
 // links on dark background
 .link--on-dark {
-    color: $primary-color;
+    color: $primary-color-light;
     text-decoration: none;
-}
-
-.link--on-dark {
-    color: $primary-color;
 }

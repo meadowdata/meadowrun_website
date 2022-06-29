@@ -98,3 +98,24 @@ a.btn {
         border-color: darken($secondary-color, 20%);
     }
 }
+
+// Secondary button
+.btn--secondary-border,
+.btn--secondary-border:visited {
+    border-color: $secondary-color;
+    color: $text-color;
+    border-width: 2px;
+    box-sizing: border-box;
+
+    &:hover,
+    &:focus {
+        background-color: darken($secondary-color, 10%);
+        border-color: darken($secondary-color, 10%);
+    }
+
+    &:active {
+        background-color: darken($secondary-color, 20%);
+        border-color: darken($secondary-color, 20%);
+    }
+}
+
